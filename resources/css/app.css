@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'flowbite';
+
+/* styles personnalisés */
+body {
+    font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+}
+.filament-sidebar {
+    @apply bg-red-500; /* pour tester */
+}
+
+
+.filament-sidebar-item {
+    @apply bg-gray-100 hover:bg-gray-200;
+}
+
+/* Cache la scrollbar dans la sidebar tout en permettant le scroll */
+.filament-sidebar {
+    scrollbar-width: none;  /* Pour Firefox */
+    -ms-overflow-style: none;  /* Pour IE et Edge */
+}
+
+.filament-sidebar::-webkit-scrollbar {
+    display: none; /* Pour Chrome, Safari et Edge */
+}
